@@ -5,7 +5,7 @@
 
 # CNN流程图
 
-![](http://github.com/zoulala/OCR_deeplearning/raw/master/CNN/ocr_cnn.png)
+![流程图](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/ocr_cnn.png)
 
 k为验证码长度
 
