@@ -1,0 +1,55 @@
+# 验证码识别-CNN
+
+用Tesseract OCR、OpenCV等等其它方法都需把验证码分割为单个字符，然后识别单个字符。分割验证码可是人的强项，如果字符之间相互重叠，那机器就不容易分割了。
+本文实现的方法不需要分割验证码，而是把验证码做为一个整体进行识别。ref:http://blog.topspeedsnail.com/archives/10858
+
+# CNN流程图
+
+![](http://github.com/zoulala/OCR_deeplearning/raw/master/CNN/ocr_cnn.png)
+
+k为验证码长度
+
+# 训练
+
+> python train.py
+
+```
+Restored from: models\m_cnn\model-17400
+start to training...
+step: 17420/20000...  loss: 0.0173... 
+step: 17440/20000...  loss: 0.0168... 
+step: 17460/20000...  loss: 0.0200... 
+step: 17480/20000...  loss: 0.0137... 
+step: 17500/20000...  loss: 0.0187... 
+step: 17500/20000...  acc: 0.9125...  best: 0.9450... 
+step: 17520/20000...  loss: 0.0174... 
+step: 17540/20000...  loss: 0.0165... 
+step: 17560/20000...  loss: 0.0189... 
+step: 17580/20000...  loss: 0.0175... 
+step: 17600/20000...  loss: 0.0179... 
+step: 17600/20000...  acc: 0.9275...  best: 0.9450... 
+```
+目前我的验证样本精度是0.94，应该可以通过调节参数获得更好的效果。
+
+
+# 测试
+> python test.py
+
+
+```
+start to test...
+test text: wOll
+predict text: w0ll
+```
+预测错误：O预测为0
+
+```
+start to test...
+test text: 1Mum
+predict text: 1Mum
+```
+预测准确
+
+
+
+# 训练好的模型
