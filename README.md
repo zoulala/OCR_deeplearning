@@ -35,7 +35,7 @@ step: 17600/20000...  acc: 0.9275...  best: 0.9450...
 # 测试
 > python test.py
 
-
+![测试1](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/test1.png)
 ```
 start to test...
 test text: wOll
@@ -43,6 +43,7 @@ predict text: w0ll
 ```
 预测错误：O预测为0
 
+![测试2](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/test2.png)
 ```
 start to test...
 test text: 1Mum
@@ -53,3 +54,8 @@ predict text: 1Mum
 
 
 # 训练好的模型
+
+链接：https://pan.baidu.com/s/16xe2Hz3e9W5B5Iz9SyPIFw 
+提取码：65zr 
+
+下载，将models文件夹放到CNN目录下
