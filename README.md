@@ -3,13 +3,13 @@
 用Tesseract OCR、OpenCV等等其它方法都需把验证码分割为单个字符，然后识别单个字符。分割验证码可是人的强项，如果字符之间相互重叠，那机器就不容易分割了。
 本文实现的方法不需要分割验证码，而是把验证码做为一个整体进行识别。ref:http://blog.topspeedsnail.com/archives/10858
 
-# CNN流程图
+### CNN流程图
 
 ![流程图](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/ocr_cnn.png)
 
 k为验证码长度
 
-# 训练
+### 训练
 
 > python train.py
 
@@ -32,7 +32,7 @@ step: 17600/20000...  acc: 0.9275...  best: 0.9450...
 目前我的验证样本精度是0.94，应该可以通过调节参数获得更好的效果。
 
 
-# 测试
+### 测试
 > python test.py
 
 ![测试1](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/test1.png)
@@ -49,11 +49,11 @@ start to test...
 test text: 1Mum
 predict text: 1Mum
 ```
-预测准确
+预测正确
 
 
 
-# 训练好的模型
+### 训练好的模型
 
 链接：https://pan.baidu.com/s/16xe2Hz3e9W5B5Iz9SyPIFw 
 提取码：65zr 
