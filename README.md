@@ -7,7 +7,7 @@
 
 ![流程图](https://github.com/zoulala/OCR_deeplearning/blob/master/CNN/ocr_cnn.png)
 
-k为验证码长度
+图中k为验证码设定长度
 
 ### 训练
 
